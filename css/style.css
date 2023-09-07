@@ -10,6 +10,13 @@
     font-family: 'Roseritta';
     src: url(../font/Roseritta.ttf);
 }
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background: url('../foto/Tcoconut_oil5.jpg');
+  }
 .navbar-default {
 	background:rgba(248, 248, 248, 0);
 	border:rgba(248, 248, 248, 0);
