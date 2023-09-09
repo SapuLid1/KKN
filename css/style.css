@@ -10,18 +10,36 @@
     font-family: 'Roseritta';
     src: url(../font/Roseritta.ttf);
 }
-
-body {
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    background: url('../foto/Tcoconut_oil5.jpg');
-  }
 .navbar-default {
 	background:rgba(248, 248, 248, 0);
 	border:rgba(248, 248, 248, 0);
 	padding:5px 5px;
 }
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom: 250px;
+    font-size: 36px;
+    color: #ffddd2;
+    font-weight: bolder ;
+    font-family: 'Roseritta';
+}
+.w-100{
+    height: 100vh;
+}
+.carousel-caption h5{
+    -webkit-transition: all 0.5s ease-in-out 0.15s;
+	-moz-transition: all 0.5s ease-in-out 0.15s;
+	-ms-transition: all 0.5s ease-in-out 0.15s;
+	-o-transition: all 0.5s ease-in-out 0.15s;
+	transition: all 0.5s ease-in-out 0.15s;
+}
+
 .logo{
     /* untuk mengatur logo yang di header */
     margin-top: 5px;
@@ -30,12 +48,14 @@ body {
     /* mengatur font nama perusahaan di heading */
     margin-top: -60px;
     margin-left: 93px;
-    font-family: Roseritta;
+    font-family: 'Roseritta';
     font-size: 18px;
-    color: #ccd5ae;
+    color: black;
     font-weight:500;
 }
-
+.menu1{
+    color: #969696;
+}
 
 .tentang{
     margin: 0 auto;
