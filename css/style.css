@@ -1,15 +1,21 @@
 @font-face{
-    font-family: 'Futura Book Font';
-    src: url(../font/Futura\ Book\ font.ttf);
+    font-family: 'Cambria';
+    src: url(../font/Cambria.ttf);
 }
 @font-face{
-    font-family: 'futura medium condensed bt';
-    src: url(../font/futura\ medium\ condensed\ bt.ttf);
+    font-family: 'Copperplate';
+    src: url(../font/Copperplate.ttf);
 }
 @font-face{
-    font-family: 'Roseritta';
-    src: url(../font/Roseritta.ttf);
+    font-family: 'futura medium bt';
+    src: url(../font/futura\ medium\ bt.ttf);
 }
+
+@font-face{
+  font-family: 'futur';
+  src: url(../font/futur.ttf);
+}
+
 .navbar-default {
 	background:rgba(248, 248, 248, 0);
 	border:rgba(248, 248, 248, 0);
@@ -194,7 +200,7 @@
   .carousel-control .icon-next {
     width: 20px;
     height: 20px;
-    font-family: serif;
+    font-family: 'Copperplate';
     line-height: 1;
   }
   .carousel-control .icon-prev:before {
@@ -465,20 +471,7 @@
 .owl-carousel .owl-item{
 	float: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*end of carousel*/
 .logo{
     /* untuk mengatur logo yang di header */
     margin-top: 5px;
@@ -487,7 +480,6 @@
     /* mengatur font nama perusahaan di heading */
     margin-top: -60px;
     margin-left: 93px;
-    font-family: 'Roseritta';
     font-size: 18px;
     color: black;
     font-weight:500;
@@ -502,23 +494,40 @@
     margin-bottom: 100px;
 
 }
-.resp-photo{
+
+.container-img {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center content vertically in the viewport */
 }
-.resp-photo img.photo{
+
+.photo-contain {
+    max-width: 100%;
+    text-align: center;
+}
+
+.resp-img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #000;
-    padding: 5px;
-    margin: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Add a media query for responsive design affecting only the article */
+@media (max-width: 768px) {
+    article {
+        max-width: 90%; /* Adjust the article width for smaller screens */
+    }
 }
 .color{
     background-color: #f5ecd7;
 }
 .selamat{
     font-size: 30px;
-    font-family: Futura Book Font;
+    font-family: 'futur';
     margin-bottom: 50px;
     margin-top: 20px;
 }
@@ -602,111 +611,81 @@ div.gallery {
 .logo1 {
     /*mengatur logo di footer */
     margin-bottom: 40px;
-
-
+}
+.menu{
+  font-family: 'futura medium bt';
+  color: white;
 }
 
-.minyakFooter {
-    /*mengatur tulisan perusahaan di footer */
-    margin-left: 100px;
-    margin-top: -58px;
-    font-family: Futura Book Font;
-    font-size: 13px;
-    color: white;
+/*--------------awal footer------------------*/
+footer{
+  background-color: #984700;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.name-footer{
-    font-family: Roseritta;
-    font-size:13px ;
-    font-weight: 500;
-    color: #ccd5ae;
+.footer-container{
+  width: 100%;
+  padding: 70px 30px 20px;
 }
-
-/*main footer */
-footer .main-footer {
-    padding: 20px 0;
-    background: #1f2605;
-
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'futura medium bt';
 }
 
-footer ul {
-    padding-left: 0;
-    list-style: none;
+.footer-text p{
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.social-icons a{
+  padding: 10px;
+  margin: 10px;
+}
+.social-icons a i{
+  font-size: 2em; 
 }
 
-/* copyright footer */
-.footer-copyright {
-    background: #091e05 ;
-    padding: 5px 0;
+.footer-bottom{
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Copperplate';
+  width: 100%;
+}
+.bottom-txt{
+  font-family: 'Copperplate';
+  font-size: 13px;
+  font-weight: bold;
+}
+.footer-bottom p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 15px;
+  word-spacing: 3px;
+  color: white;
+  font-family: 'Copperplate';
 }
 
-.footer-copyright .logo {
-    display: inherit;
+.footer-bottom p span{
+  font-family: 'fontawesome-webfont';
+  cursor: pointer;
+}
+.decor{
+  color: rgb(255, 255, 255);
+  text-decoration: none
+}
+.decor:hover{
+  color: #3e8e41;
 }
 
-.footer-copyright nav {
-    float: right;
-    margin-top: 5px;
-}
-
-.footer-copyright nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-copyright nav ul li {
-    border-left: 1px solid #505050;
-    display: inline-block;
-    line-height: 12px;
-    margin: 0;
-    padding: 0 8px;
-}
-
-.footer-copyright nav ul li a {
-    color: #969696;
-}
-
-.footer-copyright nav ul li:first-child {
-    border: medium none;
-    padding-left: 0;
-}
-
-.footer-copyright p {
-    color: #969696;
-    margin: 2px 0 0;
-}
-
-/* footer top */
-
-.footer-top {
-    background: #252525;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #222;
-}
-
-/* footer transparent */
-footer.transparent .footer-top,
-footer.transparent .main-footer {
-    background: transparent;
-}
-
-footer.transparent .footer-copyright {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
-}
-
-/* footer light */
-footer.light .footer-top {
-    background: #f9f9f9;
-}
-
-footer.light .main-footer {
-    background: #f9f9f9;
-}
-
-footer.light .footer-copyright {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
-}
 
 /* widgets */
 

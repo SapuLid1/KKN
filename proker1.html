@@ -11,23 +11,14 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon" />    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <script src="https://kit.fontawesome.com/a9ab704373.js" crossorigin="anonymous"></script>
 
     <title>KKN UNBI</title>
-    <style>
-        body {
-            background-size: cover;
-            background-attachment: fixed;
-            height: 100vh;
-            background-image: url('#');
-        }
-    </style>
-
 </head>
 
 <body> <!--awal dari navbar-->
@@ -35,10 +26,9 @@
         <div class="col-4 logo ">
             <a class="navbar-brand" href="index.html">
                 <img src="logo/logo.png" class="img-fluid" alt="logo" width="90px"> <img src="logo/unbi.png" class="img-fluid" alt="UNBI" width="90px"></a>
-            
+
 
         </div>
-       
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,47 +36,51 @@
         <!-- bagian dropdown menu -->
         <div class="collapse navbar-collapse  " id="navbarSupportedContent">
 
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #eae2b7;" href="proker1.html">Proker 1</a>
-                </li>
+            <li class="nav-item menu">
+                <a class="nav-link"  href="proker1.html">Proker 1</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #eae2b7;" href="proker2.html">Proker 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #eae2b7;" href="proker3.html">Proker 3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #eae2b7;" href="proker4.html">Proker 4</a>
-                </li>
-            </ul>
+            <li class="nav-item menu">
+                <a class="nav-link"  href="proker2.html">Proker 2</a>
+            </li>
+            <li class="nav-item menu">
+                <a class="nav-link" href="proker3.html">Proker 3</a>
+            </li>
+            <li class="nav-item menu">
+                <a class="nav-link"  href="proker4.html">Proker 4</a>
+            </li>
+        </ul>
         </div>
     </nav>
     <!--akhir dari navbar-->
 
     <!-- awal carousel-->
 
-
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="carousel-caption d-none d-md-block">
-                <div data-aos="fade-up-right">
-                    <h1 class="animated bounceInRight" style="animation-delay:1s; font-weight: bolder;">Selamat Datang
-                    </h1>
-                    <p class="animated bounceInLeft" style="animation-delay:2s">KKN-PPM UNBI 2023 DI DESA MAMBAL</p>
+    <section id="slider">
+      <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active" style="background-image:url(foto/Bali-Indonesia-Silhouette.svg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h2>BALITA DAN LANSIA SEHAT</h2>
+                  <p style="font-weight: 500;">Memberikan Informasi Seputaran Kesehatan Yang Telah Dilakukan Sebagai Program Kerja Kami</p>
                 </div>
+              </div>
             </div>
-        </div>
-
-    </div>
+          </div>
+         </div>
+      <!--/#home-carousel-->
+    </section>
 
 
     <!--akhir dari carousel-->
 
 
 
+   
     <!--awal bagian pembuka-->
     <section>
         <div class="container-fluid color">
@@ -102,10 +96,10 @@
             <!--READ MORE BUTTON STILL ERROR-->
             <p>
             <div class="row g-0 ">
-                <div class="col-md-8 text-center tentang resp-photo">
+                <div class="col-md-8 text-center tentang">
                     <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-easing="ease-in">
-                        <article class="color3 isi photo">
-                            <p><img src="foto/test.jpg" alt="foto1" style="width: 500px;"> </p>
+                        <article class="color3 isi">
+                            <p><img class="resp-img" src="foto/test.jpg" alt="foto1"> </p>
                             <p style="text-align: justify;">Program Balita dan Lansia yang dijalankan oleh Mahasiswa
                                 KKN-PPM
                                 Ke-VI Universitas Bali Internasional 2023 di Desa Mambal, Kecamatan Abiansemal,
@@ -136,20 +130,16 @@
                                     untuk menilai perkembangan anak, dan jika diperlukan, berkonsultasi dengan dokter
                                     untuk tindakan lebih lanjut. Pengecekan dini merupakan langkah yang bijak untuk
                                     mendukung perkembangan anak. Berikut informasi yang bisa dicek lebih lanjut melalui
-                                    situs resmi Kemenkes: <a href="https://ayosehat.kemkes.go.id/tiga-langkah-mudah-pantau-tumbuh-kembang-buah-hati-anda
+                                    <a href="https://ayosehat.kemkes.go.id/home">situs resmi Kemenkes.</a>
 
-                                    " target="_blank">Pantau tumbuh kembang buah hati anda,</a> <a
-                                        href="https://ayosehat.kemkes.go.id/yuk-konsumsi-protein-hewani-untuk-cegah-stunting-dan-maksimalkan-tumbuh-kembang-anak-cek-caranya"
-                                        target="_blank">Cegah stunting maksimalkan tumbuh kembang anak,</a>
-                                    <a href="https://ayosehat.kemkes.go.id/dampak-buruk-rokok-pada-tumbuh-kembang-anak-sebuah-ancaman-terselubung-dalam-era-pandemi-akankah-berlanjut"
-                                        target="_blank">Dampak buruk rokok pada tumbuh kembang anak.</a><br> <br>
+                                    <br> <br>
                                     Terakhir, Prodi Psikologi menekankan pentingnya memberikan stimulus sensory
                                     dan motorik yang cukup kepada anak-anak untuk memastikan perkembangan mereka
                                     mencapai potensi maksimal dan untuk mendeteksi gangguan perkembangan sejak dini.
                                     Dengan kerjasama antara program studi ini, program Balita dan Lansia diharapkan
                                     dapat memberikan manfaat yang besar bagi masyarakat Desa Mambal.</span>
                             </p>
-                            <button onclick="myFunction()" id="artikel" class="button">Lihat lebih</button>
+                            <button onclick="myFunction()" id="artikel" class="button">Baca lebih</button>
 
                         </article>
 
@@ -160,76 +150,42 @@
             </div>
         </div>
 
+        
         <div class="container-fluid color">
-            <div class="row">
-                <div data-aos="fade-down" data-aos-duration="400">
-                    <div class="col selamat text-center ">
-                        <b> Struktur Organisasi<br>
-                            KKN-PPM UNBI Di Desa Mambal 2023 </b>
-                    </div>
-                </div>
-
-            </div>
-
-            <p>
-            <div class="row g-0 ">
-                <div class="col-md-8 text-center tentang">
-                    <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-easing="ease-in">
-                        <div class="card-body color3 isi">
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                                reiciendis exercitationem, accusantium beatae ratione itaque soluta minima nemo,
-                                temporibus natus adipisci enim quos nam ab, commodi numquam facere? Dolorum, quis?
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi reiciendis
-                                exercitationem, accusantium beatae ratione itaque soluta minima nemo, temporibus natus
-                                adipisci enim quos nam ab, commodi numquam facere? Dolorum, quis?
-                            <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000"
-                                data-aos-easing="ease-out">
-                                <form>
-                                    <button formaction="portfolio.php" class="button">lihat lebih</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="container-fluid">
             <div class="row g-0">
                 <div class="responsive">
                     <div class="gallery">
-                      <a target="_blank" href="foto/test.jpg">
-                        <img src="foto/test.jpg" alt="Cinque Terre">
+                      <a target="_blank" href="foto/p1.jpg">
+                        <img src="foto/p1.jpg" alt="foto bersama">
                       </a>
-                      <div class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure eligendi assumenda culpa quaerat amet vero possimus unde earum mollitia laudantium, sapiente, hic qui suscipit, tenetur delectus eos quo consequatur?</div>
+                      <div class="desc">Foto bersama dengan Kader posyandu di Banjar Agung, Desa Mambal, Kecamatan Abiansemal</div>
+                  </div>
+                </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="foto/p1(2).jpeg">
+                        <img src="foto/p1(2).jpeg" alt="foto 2">
+                      </a>
+                      <div class="desc">Edukasi keseimbangan dan kemampuan kardiorespirasi yang dilakukan oleh prodi fisioterapi</div>
                     </div>
                   </div>
                   
                   <div class="responsive">
                     <div class="gallery">
-                      <a target="_blank" href="foto/test.jpg">
-                        <img src="foto/test.jpg" alt="Forest">
+                      <a target="_blank" href="foto/p1(3).jpg">
+                        <img src="foto/p1(3).jpg" alt="foto 3">
                       </a>
-                      <div class="desc">Add a description of the image here</div>
+                      <div class="desc">Edukasi MPASI Kepada Masyarakat di Banjar Agung</div>
                     </div>
                   </div>
                   
                   <div class="responsive">
                     <div class="gallery">
-                      <a target="_blank" href="foto/test.jpg">
-                        <img src="foto/test.jpg" alt="Northern Lights">
+                      <a target="_blank" href="foto/p1(4).jpg">
+                        <img src="foto/p1(4).jpg" alt="foto 4">
                       </a>
-                      <div class="desc">Add a description of the image here</div>
-                    </div>
-                  </div>
-                  
-                  <div class="responsive">
-                    <div class="gallery">
-                      <a target="_blank" href="foto/test.jpg">
-                        <img src="foto/test.jpg" alt="Mountains">
-                      </a>
-                      <div class="desc">Add a description of the image here</div>
+                      <div class="desc">Pengenalan Sensorik dan Motorik ke Balita</div>
                     </div>
                   </div>
                   
@@ -243,44 +199,32 @@
     <!--awal footer-->
     <section>
 
-        <footer class="text-center text-white" style="background-color: darkgreen;">
-            <!-- Grid container -->
-            <div class="container pt-4">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-                    <!-- Twitter -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-
-                    <!-- Google -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-                    <!-- Instagram -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
-                    <!-- Linkedin -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-                    <!-- Github -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-                </section>
-                <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
-
-            <!-- Copyright -->
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2020 Copyright:
-                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
+      <footer class="text-center text-white" style="background-color: #343a40;">
+          <!-- Grid container -->
+          <div class="container pt-5">
+              <div class="footer-text">
+                <h4>KKN-PPM UNBI 2023 Desa Mambal.</h4>
+                <p>Kami Mahasiswa KKN Mengucapkan Terima Kasih Kepada Desa Mambal</p>
+                <a class="decor" href="https://desamambal.badungkab.go.id/">Website Desa Mambal</a>
+                </div>
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <div class="social-icons">
+                  <a href="https://instagram.com/kkndesamambal_unbi23?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram fa-beat-fade fa-2xl" style="color: whitesmoke;"></i></a>
+                   </div>
+            </section>
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center text-white p-1 bottom-txt" style="background-color: rgba(0, 0, 0, 0.5);">
+            KLP 9 &copy; 
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+            
+          </div>
+          <!-- Copyright -->
         </footer>
         <!-- akhir dari footer -->
 
@@ -319,7 +263,7 @@
             }
         });
     </script>
-    <script>
+     <script>
         function myFunction() {
             var dots = document.getElementById("dots");
             var moreText = document.getElementById("more");
@@ -331,7 +275,7 @@
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Baca kurang";
+                btnText.innerHTML = "Baca sedikit";
                 moreText.style.display = "inline";
             }
         }
